@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Grid in css</title>
+		<style>
+		#grid_parent{
+		background-color:cyan;
+		padding:10px;
+		display:Grid;
+		/*grid-template-columns:1fr 1fr 1fr;
+		grid-template-rows:200px;
+		column-gap:10px; */
+		}
+		.logo{
+		grid-column:1/2;
+		}
+		.nav{
+		grid-column:2/4;
+		}
+		.banner{
+		grid-column:1/4;
+		}
+		.content1{
+		
+		}
+		.content2{
+		
+		}
+		.content3{
+		
+		}
+		.footer{
+		grid-column:1/4;
+		}
+		.grid_child{
+		background-color:black;
+		color:white;
+		font-size:36px;
+		font-weight:700;
+		text-align:center;
+		border:1px solid white;
+		padding:30px;
+		}
+		
+		</style>
+	</head>
+	<body>
+	    <div id="grid_parent">
+		    <div class="grid_child logo">logo</div>
+			<div class="grid_child nav">nav</div>
+			<div class="grid_child banner">banner</div>
+			<div class="grid_child grid_child3">content1</div>
+			<div class="grid_child grid_child3">content2</div>
+			<div class="grid_child grid_child3">content3</div>
+			<div class="grid_child footer">footer</div>
+		</div>
+	</body>
+</html>

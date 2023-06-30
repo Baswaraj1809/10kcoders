@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Pseudo Class Selector andd other</title>
+   </head>
+   <style>
+   body{
+   text-align:center;
+   background-color:gray;
+   }
+   
+   h1:hover{
+   color:orange;
+   font-size:40px;
+   }
+   
+   ul{
+   list-style-type:none;
+   }
+   
+    ul>li:First-Child{
+	color:red;
+	}
+	
+	ul>li:last-Child{
+	color:green;
+	}
+	
+	ul>li:nth-Child(2){
+	color:yellow;
+	}
+	
+	ul>li:nth-Child(3){
+	color:blue;
+	}
+	
+	p::first-letter{
+	font-size:36px;
+	color:orange;
+	}
+	
+	p::selection{
+	background-color:orange;
+	}
+	
+	.attribute{
+	color:yellow;
+	}
+	
+	
+	/*
+	p::before{
+	content:url(./images/emoji.png)
+	}
+	
+	p::after{
+	content:url(./images/emoji.png)
+	} */
+	
+   </style>
+   <body>
+   <img src="./images/logo.png" alt="10000_coders"/>
+   <h1>Courses Offered</h1>
+       <ul>
+	      <li>HTML</li>
+		  <li>CSS</li>
+		  <li>JAVA SCRIPT</li>
+		  <li>REACT</li>
+	   </ul>
+	   <p>Don't settle for average. Bring your best to the moment. Then, whether it fails or succeeds, at least you know you gave all you had.</p>
+	   <marquee><h2 class="attribute">Hurry up...</h2></marquee>
+   </body>
+   
+</html>

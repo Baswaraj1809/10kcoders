@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	     <title>sample_layout_css</title>
+		 <style>
+		 .header{
+		 background-color:black;
+		 color:white;
+		 height:100px;
+	     padding:50px;
+		 text-align:center;
+		 font-weight:700;
+		 }
+		 .nav{
+		 background-color:green;
+		 color:black;
+		 height:500px;
+		 display:flex;
+		 justify-content:center;
+		 align-items:center;
+		 }
+		 .content{
+		 display:flex;
+		 
+		 }
+		 .content>div:nth-child(1),.content>div:nth-child(2),.content>div:nth-child(3){
+		 background-color:gray;
+		 color:green;
+		 height:100px;
+		 width:33%;
+		 text-align:center;
+		 border:1px solid green;
+		 }
+		 .footer{
+		 background-color:red;
+		 color:black;
+		 height:100px;
+		 text-align:center; 
+		 }
+
+		 </style>
+	</head>
+	<body>
+	    <div class="header">Header</div>
+		<div class="nav">nav</div>
+		<div class="content">
+		   <div>content1</div>
+		   <div>content2</div>
+		   <div>content3</div>
+		</div>
+		<div class="footer">footer</div>
+	</body>
+</html>

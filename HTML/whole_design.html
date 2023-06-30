@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>combinator selector</title>
+	   <style>
+	    .header{
+		display:flex;
+		}
+		
+		ul li{
+		flex:1
+		}
+		
+		header>nav{
+		flex:10
+		}
+		
+		ul{
+		list-style-type:none;
+		}
+		
+		h2 + p {
+		color:green
+		}
+		<!-- general sibling selector -->
+		h1 ~ p {
+		color:red
+		}
+		.images{
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr;
+		}
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		@media only screen and (max-width:320px){
+		.images{
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr;
+		}
+		}
+	   </style>
+    </head>
+	<body>
+	   <header class="header">
+	    <div style="flex:4"><img src="https://cognizant.scene7.com/is/content/cognizant/cog-pride-logo?fmt=png-alpha" alt="cognizant_india"/></div>
+		<nav>
+		   <ul class="header">
+		     <li><strong><a href="#Industries">Industries</a></strong></li>
+			 <li><strong><a href="#services">Services</a></strong></li>
+			 <li><strong><a href="#Insights">Insights</a></strong></li>
+			 <li><strong><a href="#about">about</a></strong></li>
+		   </ul>
+		</nav>
+	   </header>
+	   <h1>Engineering applications for modern businesses</h1>
+	   <p>Accelerate modernization with software and platform-driven solutions.</p>
+	   <p>Facing a new normal, today’s enterprises must modernize their business, fuel innovation and become more agile. That may require compressing years of change into months.</p>
+	   <h2>Our partners</h2>
+	   <p>We form partnerships and strategic alliances with world-class organizations to expand our service offerings and deliver comprehensive solutions to clients. Strategic alliances with the world’s leading companies enable us to provide complete solutions to your business and IT challenges.</p>
+	   <div class="images">
+	      <div><img src="C:\Users\HP\OneDrive\Desktop\10000 CODERS\practice\images\cognizant1.jpg" /></div>
+		  <div><img src="C:\Users\HP\OneDrive\Desktop\10000 CODERS\practice\images\cognizant2.jpg" /></div>
+		  <div><img src="C:\Users\HP\OneDrive\Desktop\10000 CODERS\practice\images\cognizant3.jpg" /></div>
+	   </div>
+	</body>
+</html>

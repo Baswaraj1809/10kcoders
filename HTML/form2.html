@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Form Tag</title>
+	</head>
+	<div style="background-color:turquoise;">
+	<body>
+	    <h2>Appeal Application Form</h2>
+		<h3>Personal Information</h3>
+		<div style="margin:8px;">
+		    <label for="name">Name</label><br>
+			<input type="text" id="name" value="First"/>
+			<input type="text" id="name" value="Last"/>
+		</div>
+		<div style="margin:2px;">
+		    <label for="number">Student Number</label><br>
+			<input type="number" id="number"/>
+		</div>
+		<h3>Appeal Information</h3>
+		<div style="margin:4px;">
+		    <label for="summary">Request Summary</label><br>
+			<input type="text" id="summary"/>
+		</div>
+		<div style="margin:4px;">
+		    <label for="upload">Letter of Appeal Upload</label><br>
+			<!--<input type="file" id="upload" value="Choose files or drag here" style="border:1px solid black"/>-->
+			<input id="upload" value="Choose files or drag here" style="width:90%;height:30px;display:flex;justify-content:center;align-items:center"/>
+		</div>
+		<div>
+		    <label>Do you have supporting documents to upload in support of your appeal?</label><br>
+			<select style="width:100%;height:30px;">
+			      <option>select</option>
+				  <option>Yes</option>
+				  <option>No</option>
+			</select>
+		</div>
+	</body>
+	</div>
+</html>
